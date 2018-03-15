@@ -10,7 +10,7 @@ constructor (){
 
 addRelatedMovie(m){
     if(m instanceof Movie){ 
-        this.related.append(m)
+        this.related.push(m)
         return true
     }
     false
@@ -36,9 +36,13 @@ addRelatedMovie(m){
    }     
     addMovie(m){
         if(m instanceof Movie)
-         this.movie.append(m)
+         this.movie.push(m)
            return true
         return false
     }
        
  }
+
+
+
+ 
